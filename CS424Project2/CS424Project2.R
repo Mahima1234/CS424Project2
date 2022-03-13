@@ -49,174 +49,160 @@ Data6Merged$Year <- year(mdy(Data6Merged$date))
 Data7Merged$Year <- year(mdy(Data7Merged$date))
 Data8Merged$Year <- year(mdy(Data8Merged$date))
 
+Data1Merged$Line[Data1Merged$RED == TRUE] <- "Red"
+Data1Merged$Code[Data1Merged$RED == TRUE] <- as.numeric(1)
+Data1Merged$Line[Data1Merged$BLUE == TRUE] <- "Blue"
+Data1Merged$Code[Data1Merged$BLUE == TRUE] <- as.numeric(2)
+Data1Merged$Line[Data1Merged$BRN == TRUE] <- "Brown"
+Data1Merged$Code[Data1Merged$BRN == TRUE] <- as.numeric(3)
+Data1Merged$Line[Data1Merged$G == TRUE] <- "Green"
+Data1Merged$Code[Data1Merged$G == TRUE] <- as.numeric(4)
+Data1Merged$Line[Data1Merged$O == TRUE] <- "Orange"
+Data1Merged$Code[Data1Merged$O == TRUE] <- as.numeric(5)
+Data1Merged$Line[Data1Merged$Pnk == TRUE] <- "Pink"
+Data1Merged$Code[Data1Merged$Pnk == TRUE] <- as.numeric(6)
+Data1Merged$Line[Data1Merged$P == TRUE] <- "Purple"
+Data1Merged$Code[Data1Merged$P == TRUE] <- as.numeric(7)
+Data1Merged$Line[Data1Merged$Y == TRUE] <- "Yellow"
+Data1Merged$Code[Data1Merged$Y == TRUE] <- as.numeric(8)
 
-if(Data1Merged$RED == TRUE){
-  Data1Merged$Line = "Red"
-}else if(Data1Merged$BLUE == TRUE){
-  Data1Merged$Line = "Blue"
-}else if(Data1Merged$BRN == TRUE){
-  Data1Merged$Line = "Brown"
-}else if(Data1Merged$G == TRUE){
-  Data1Merged$Line = "Green"
-}else if(Data1Merged$O == TRUE){
-  Data1Merged$Line = "Orange"
-}else if(Data1Merged$Pnk == TRUE){
-  Data1Merged$Line = "Pink"
-}else if(Data1Merged$P == TRUE){
-  Data1Merged$Line = "Purple"
-}else if(Data1Merged$Y == TRUE){
-  Data1Merged$Line = "Yellow"
-}
+Data2Merged$Line[Data2Merged$RED == TRUE] <- "Red"
+Data2Merged$Code[Data2Merged$RED == TRUE] <- as.numeric(1)
+Data2Merged$Line[Data2Merged$BLUE == TRUE] <- "Blue"
+Data2Merged$Code[Data2Merged$BLUE == TRUE] <- as.numeric(2)
+Data2Merged$Line[Data2Merged$BRN == TRUE] <- "Brown"
+Data2Merged$Code[Data2Merged$BRN == TRUE] <- as.numeric(3)
+Data2Merged$Line[Data2Merged$G == TRUE] <- "Green"
+Data2Merged$Code[Data2Merged$G == TRUE] <- as.numeric(4)
+Data2Merged$Line[Data2Merged$O == TRUE] <- "Orange"
+Data2Merged$Code[Data2Merged$O == TRUE] <- as.numeric(5)
+Data2Merged$Line[Data2Merged$Pnk == TRUE] <- "Pink"
+Data2Merged$Code[Data2Merged$Pnk == TRUE] <- as.numeric(6)
+Data2Merged$Line[Data2Merged$P == TRUE] <- "Purple"
+Data2Merged$Code[Data2Merged$P == TRUE] <- as.numeric(7)
+Data2Merged$Line[Data2Merged$Y == TRUE] <- "Yellow"
+Data2Merged$Code[Data2Merged$Y == TRUE] <- as.numeric(8)
 
-if(Data2Merged$RED == TRUE){
-  Data2Merged$Line = "Red"
-}else if(Data2Merged$BLUE == TRUE){
-  Data2Merged$Line = "Blue"
-}else if(Data2Merged$BRN == TRUE){
-  Data2Merged$Line = "Brown"
-}else if(Data2Merged$G == TRUE){
-  Data2Merged$Line = "Green"
-}else if(Data2Merged$O == TRUE){
-  Data2Merged$Line = "Orange"
-}else if(Data2Merged$Pnk == TRUE){
-  Data2Merged$Line = "Pink"
-}else if(Data2Merged$P == TRUE){
-  Data2Merged$Line = "Purple"
-}else if(Data2Merged$Y == TRUE){
-  Data2Merged$Line = "Yellow"
-}
+Data3Merged$Line[Data3Merged$RED == TRUE] <- "Red"
+Data3Merged$Code[Data3Merged$RED == TRUE] <- as.numeric(1)
+Data3Merged$Line[Data3Merged$BLUE == TRUE] <- "Blue"
+Data3Merged$Code[Data3Merged$BLUE == TRUE] <- as.numeric(2)
+Data3Merged$Line[Data3Merged$BRN == TRUE] <- "Brown"
+Data3Merged$Code[Data3Merged$BRN == TRUE] <- as.numeric(3)
+Data3Merged$Line[Data3Merged$G == TRUE] <- "Green"
+Data3Merged$Code[Data3Merged$G == TRUE] <- as.numeric(4)
+Data3Merged$Line[Data3Merged$O == TRUE] <- "Orange"
+Data3Merged$Code[Data3Merged$O == TRUE] <- as.numeric(5)
+Data3Merged$Line[Data3Merged$Pnk == TRUE] <- "Pink"
+Data3Merged$Code[Data3Merged$Pnk == TRUE] <- as.numeric(6)
+Data3Merged$Line[Data3Merged$P == TRUE] <- "Purple"
+Data3Merged$Code[Data3Merged$P == TRUE] <- as.numeric(7)
+Data3Merged$Line[Data3Merged$Y == TRUE] <- "Yellow"
+Data3Merged$Code[Data3Merged$Y == TRUE] <- as.numeric(8)
 
+Data4Merged$Line[Data4Merged$RED == TRUE] <- "Red"
+Data4Merged$Code[Data4Merged$RED == TRUE] <- as.numeric(1)
+Data4Merged$Line[Data4Merged$BLUE == TRUE] <- "Blue"
+Data4Merged$Code[Data4Merged$BLUE == TRUE] <- as.numeric(2)
+Data4Merged$Line[Data4Merged$BRN == TRUE] <- "Brown"
+Data4Merged$Code[Data4Merged$BRN == TRUE] <- as.numeric(3)
+Data4Merged$Line[Data4Merged$G == TRUE] <- "Green"
+Data4Merged$Code[Data4Merged$G == TRUE] <- as.numeric(4)
+Data4Merged$Line[Data4Merged$O == TRUE] <- "Orange"
+Data4Merged$Code[Data4Merged$O == TRUE] <- as.numeric(5)
+Data4Merged$Line[Data4Merged$Pnk == TRUE] <- "Pink"
+Data4Merged$Code[Data4Merged$Pnk == TRUE] <- as.numeric(6)
+Data4Merged$Line[Data4Merged$P == TRUE] <- "Purple"
+Data4Merged$Code[Data4Merged$P == TRUE] <- as.numeric(7)
+Data4Merged$Line[Data4Merged$Y == TRUE] <- "Yellow"
+Data4Merged$Code[Data4Merged$Y == TRUE] <- as.numeric(8)
 
-if(Data3Merged$RED == TRUE){
-  Data3Merged$Line = "Red"
-}else if(Data3Merged$BLUE == TRUE){
-  Data3Merged$Line = "Blue"
-}else if(Data3Merged$BRN == TRUE){
-  Data3Merged$Line = "Brown"
-}else if(Data3Merged$G == TRUE){
-  Data3Merged$Line = "Green"
-}else if(Data3Merged$O == TRUE){
-  Data3Merged$Line = "Orange"
-}else if(Data3Merged$Pnk == TRUE){
-  Data3Merged$Line = "Pink"
-}else if(Data3Merged$P == TRUE){
-  Data3Merged$Line = "Purple"
-}else if(Data3Merged$Y == TRUE){
-  Data3Merged$Line = "Yellow"
-}
+Data5Merged$Line[Data5Merged$RED == TRUE] <- "Red"
+Data5Merged$Code[Data5Merged$RED == TRUE] <- as.numeric(1)
+Data5Merged$Line[Data5Merged$BLUE == TRUE] <- "Blue"
+Data5Merged$Code[Data5Merged$BLUE == TRUE] <- as.numeric(2)
+Data5Merged$Line[Data5Merged$BRN == TRUE] <- "Brown"
+Data5Merged$Code[Data5Merged$BRN == TRUE] <- as.numeric(3)
+Data5Merged$Line[Data5Merged$G == TRUE] <- "Green"
+Data5Merged$Code[Data5Merged$G == TRUE] <- as.numeric(4)
+Data5Merged$Line[Data5Merged$O == TRUE] <- "Orange"
+Data5Merged$Code[Data5Merged$O == TRUE] <- as.numeric(5)
+Data5Merged$Line[Data5Merged$Pnk == TRUE] <- "Pink"
+Data5Merged$Code[Data5Merged$Pnk == TRUE] <- as.numeric(6)
+Data5Merged$Line[Data5Merged$P == TRUE] <- "Purple"
+Data5Merged$Code[Data5Merged$P == TRUE] <- as.numeric(7)
+Data5Merged$Line[Data5Merged$Y == TRUE] <- "Yellow"
+Data5Merged$Code[Data5Merged$Y == TRUE] <- as.numeric(8)
 
-
-if(Data4Merged$RED == TRUE){
-  Data4Merged$Line = "Red"
-}else if(Data4Merged$BLUE == TRUE){
-  Data4Merged$Line = "Blue"
-}else if(Data4Merged$BRN == TRUE){
-  Data4Merged$Line = "Brown"
-}else if(Data4Merged$G == TRUE){
-  Data4Merged$Line = "Green"
-}else if(Data4Merged$O == TRUE){
-  Data4Merged$Line = "Orange"
-}else if(Data4Merged$Pnk == TRUE){
-  Data4Merged$Line = "Pink"
-}else if(Data4Merged$P == TRUE){
-  Data4Merged$Line = "Purple"
-}else if(Data4Merged$Y == TRUE){
-  Data4Merged$Line = "Yellow"
-}
-
-
-if(Data5Merged$RED == TRUE){
-  Data5Merged$Line = "Red"
-}else if(Data5Merged$BLUE == TRUE){
-  Data5Merged$Line = "Blue"
-}else if(Data5Merged$BRN == TRUE){
-  Data5Merged$Line = "Brown"
-}else if(Data5Merged$G == TRUE){
-  Data5Merged$Line = "Green"
-}else if(Data5Merged$O == TRUE){
-  Data5Merged$Line = "Orange"
-}else if(Data5Merged$Pnk == TRUE){
-  Data5Merged$Line = "Pink"
-}else if(Data5Merged$P == TRUE){
-  Data5Merged$Line = "Purple"
-}else if(Data5Merged$Y == TRUE){
-  Data5Merged$Line = "Yellow"
-}
-
-
-if(Data6Merged$RED == TRUE){
-  Data6Merged$Line = "Red"
-}else if(Data6Merged$BLUE == TRUE){
-  Data6Merged$Line = "Blue"
-}else if(Data6Merged$BRN == TRUE){
-  Data6Merged$Line = "Brown"
-}else if(Data6Merged$G == TRUE){
-  Data6Merged$Line = "Green"
-}else if(Data6Merged$O == TRUE){
-  Data6Merged$Line = "Orange"
-}else if(Data6Merged$Pnk == TRUE){
-  Data6Merged$Line = "Pink"
-}else if(Data6Merged$P == TRUE){
-  Data6Merged$Line = "Purple"
-}else if(Data6Merged$Y == TRUE){
-  Data6Merged$Line = "Yellow"
-}
+Data6Merged$Line[Data6Merged$RED == TRUE] <- "Red"
+Data6Merged$Code[Data6Merged$RED == TRUE] <- as.numeric(1)
+Data6Merged$Line[Data6Merged$BLUE == TRUE] <- "Blue"
+Data6Merged$Code[Data6Merged$BLUE == TRUE] <- as.numeric(2)
+Data6Merged$Line[Data6Merged$BRN == TRUE] <- "Brown"
+Data6Merged$Code[Data6Merged$BRN == TRUE] <- as.numeric(3)
+Data6Merged$Line[Data6Merged$G == TRUE] <- "Green"
+Data6Merged$Code[Data6Merged$G == TRUE] <- as.numeric(4)
+Data6Merged$Line[Data6Merged$O == TRUE] <- "Orange"
+Data6Merged$Code[Data6Merged$O == TRUE] <- as.numeric(5)
+Data6Merged$Line[Data6Merged$Pnk == TRUE] <- "Pink"
+Data6Merged$Code[Data6Merged$Pnk == TRUE] <- as.numeric(6)
+Data6Merged$Line[Data6Merged$P == TRUE] <- "Purple"
+Data6Merged$Code[Data6Merged$P == TRUE] <- as.numeric(7)
+Data6Merged$Line[Data6Merged$Y == TRUE] <- "Yellow"
+Data6Merged$Code[Data6Merged$Y == TRUE] <- as.numeric(8)
 
 
-if(Data7Merged$RED == TRUE){
-  Data7Merged$Line = "Red"
-}else if(Data7Merged$BLUE == TRUE){
-  Data7Merged$Line = "Blue"
-}else if(Data7Merged$BRN == TRUE){
-  Data7Merged$Line = "Brown"
-}else if(Data7Merged$G == TRUE){
-  Data7Merged$Line = "Green"
-}else if(Data7Merged$O == TRUE){
-  Data7Merged$Line = "Orange"
-}else if(Data7Merged$Pnk == TRUE){
-  Data7Merged$Line = "Pink"
-}else if(Data7Merged$P == TRUE){
-  Data7Merged$Line = "Purple"
-}else if(Data7Merged$Y == TRUE){
-  Data7Merged$Line = "Yellow"
-}
+Data7Merged$Line[Data7Merged$RED == TRUE] <- "Red"
+Data7Merged$Code[Data7Merged$RED == TRUE] <- as.numeric(1)
+Data7Merged$Line[Data7Merged$BLUE == TRUE] <- "Blue"
+Data7Merged$Code[Data7Merged$BLUE == TRUE] <- as.numeric(2)
+Data7Merged$Line[Data7Merged$BRN == TRUE] <- "Brown"
+Data7Merged$Code[Data7Merged$BRN == TRUE] <- as.numeric(3)
+Data7Merged$Line[Data7Merged$G == TRUE] <- "Green"
+Data7Merged$Code[Data7Merged$G == TRUE] <- as.numeric(4)
+Data7Merged$Line[Data7Merged$O == TRUE] <- "Orange"
+Data7Merged$Code[Data7Merged$O == TRUE] <- as.numeric(5)
+Data7Merged$Line[Data7Merged$Pnk == TRUE] <- "Pink"
+Data7Merged$Code[Data7Merged$Pnk == TRUE] <- as.numeric(6)
+Data7Merged$Line[Data7Merged$P == TRUE] <- "Purple"
+Data7Merged$Code[Data7Merged$P == TRUE] <- as.numeric(7)
+Data7Merged$Line[Data7Merged$Y == TRUE] <- "Yellow"
+Data7Merged$Code[Data7Merged$Y == TRUE] <- as.numeric(8)
 
-if(Data8Merged$RED == TRUE){
-  Data8Merged$Line = "Red"
-}else if(Data8Merged$BLUE == TRUE){
-  Data8Merged$Line = "Blue"
-}else if(Data8Merged$BRN == TRUE){
-  Data8Merged$Line = "Brown"
-}else if(Data8Merged$G == TRUE){
-  Data8Merged$Line = "Green"
-}else if(Data8Merged$O == TRUE){
-  Data8Merged$Line = "Orange"
-}else if(Data8Merged$Pnk == TRUE){
-  Data8Merged$Line = "Pink"
-}else if(Data8Merged$P == TRUE){
-  Data8Merged$Line = "Purple"
-}else if(Data8Merged$Y == TRUE){
-  Data8Merged$Line = "Yellow"
-}
+Data8Merged$Line[Data8Merged$RED == TRUE] <- "Red"
+Data8Merged$Code[Data8Merged$RED == TRUE] <- as.numeric(1)
+Data8Merged$Line[Data8Merged$BLUE == TRUE] <- "Blue"
+Data8Merged$Code[Data8Merged$BLUE == TRUE] <- as.numeric(2)
+Data8Merged$Line[Data8Merged$BRN == TRUE] <- "Brown"
+Data8Merged$Code[Data8Merged$BRN == TRUE] <- as.numeric(3)
+Data8Merged$Line[Data8Merged$G == TRUE] <- "Green"
+Data8Merged$Code[Data8Merged$G == TRUE] <- as.numeric(4)
+Data8Merged$Line[Data8Merged$O == TRUE] <- "Orange"
+Data8Merged$Code[Data8Merged$O == TRUE] <- as.numeric(5)
+Data8Merged$Line[Data8Merged$Pnk == TRUE] <- "Pink"
+Data8Merged$Code[Data8Merged$Pnk == TRUE] <- as.numeric(6)
+Data8Merged$Line[Data8Merged$P == TRUE] <- "Purple"
+Data8Merged$Code[Data8Merged$P == TRUE] <- as.numeric(7)
+Data8Merged$Line[Data8Merged$Y == TRUE] <- "Yellow"
+Data8Merged$Code[Data8Merged$Y == TRUE] <- as.numeric(8)
 
+LatLon$Line[LatLon$RED == TRUE] <- "Red"
+LatLon$Code[LatLon$RED == TRUE] <- as.numeric(1)
+LatLon$Line[LatLon$BLUE == TRUE] <- "Blue"
+LatLon$Code[LatLon$BLUE == TRUE] <- as.numeric(2)
+LatLon$Line[LatLon$BRN == TRUE] <- "Brown"
+LatLon$Code[LatLon$BRN == TRUE] <- as.numeric(3)
+LatLon$Line[LatLon$G == TRUE] <- "Green"
+LatLon$Code[LatLon$G == TRUE] <- as.numeric(4)
+LatLon$Line[LatLon$O == TRUE] <- "Orange"
+LatLon$Code[LatLon$O == TRUE] <- as.numeric(5)
+LatLon$Line[LatLon$Pnk == TRUE] <- "Pink"
+LatLon$Code[LatLon$Pnk == TRUE] <- as.numeric(6)
+LatLon$Line[LatLon$P == TRUE] <- "Purple"
+LatLon$Code[LatLon$P == TRUE] <- as.numeric(7)
+LatLon$Line[LatLon$Y == TRUE] <- "Yellow"
+LatLon$Code[LatLon$Y == TRUE] <- as.numeric(8)
 
-if(LatLon$RED == TRUE){
-  LatLon$Line = "Red"
-}else if(LatLon$BLUE == TRUE){
-  LatLon$Line = "Blue"
-}else if(LatLon$BRN == TRUE){
-  LatLon$Line = "Brown"
-}else if(LatLon$G == TRUE){
-  LatLon$Line = "Green"
-}else if(LatLon$O == TRUE){
-  LatLon$Line = "Orange"
-}else if(LatLon$Pnk == TRUE){
-  LatLon$Line = "Pink"
-}else if(LatLon$P == TRUE){
-  LatLon$Line = "Purple"
-}else if(LatLon$Y == TRUE){
-  LatLon$Line = "Yellow"
-}
 
 styles <- c("First Style", "Second Style", "Third Style")
 order <- c("Alphabetical", "Low-High")
@@ -226,29 +212,37 @@ for (i in colnames(LatLon)){
   stops <- c(stops, LatLon[i]$STATION_NAME)
 }
 DataFirstDay <- subset(Data8Merged, newDate == "2021-08-23")
-
+DataFirstDay2 <- subset(Data8Merged, newDate == "2021-08-23")
+DataFirstDay$test = cut(DataFirstDay$Code,
+                breaks = c(1,2,3,4,5,6,7,8, 9), right = FALSE,
+                labels = c("red", "blue", "brown","green","orange", "pink", "purple", "yellow"))
+pal = colorFactor(palette = c("red", "blue", "brown", "green", "orange", "pink", "purple", "yellow"), domain = DataFirstDay$test)
+DataFirstDay2$test = cut(DataFirstDay2$Code,
+                        breaks = c(1,2,3,4,5,6,7,8, 9), right = FALSE,
+                        labels = c("red", "blue", "brown","green","orange", "pink", "purple", "yellow"))
+pal = colorFactor(palette = c("red", "blue", "brown", "green", "orange", "pink", "purple", "yellow"), domain = DataFirstDay2$test)
 ui <- dashboardPage(
   #Title for the application
   dashboardHeader(title = "CS 424 Project 2"),
   #Components on sidebar to switch from tab to tab
   dashboardSidebar(disable = FALSE, collapsed = FALSE,
-    sidebarMenu(
-      #First set of plots and tables that the user sees
-      menuItem("", tabName = "default", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("", tabName = "cheapBlankSpace", icon = NULL),
-      menuItem("Dashboard", tabName = "dashboard", icon = NULL),
-      menuItem("Map Visualization", tabName = "maps", icon = NULL),
-      menuItem("Bar Chart Visualization", tabName = "bars", icon = NULL),
-      menuItem("Compare Plots", tabName = "comparePlots", icon = NULL),
-      menuItem("About", tabName = "about", icon = NULL)
-    )
+                   sidebarMenu(
+                     #First set of plots and tables that the user sees
+                     menuItem("", tabName = "default", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("", tabName = "cheapBlankSpace", icon = NULL),
+                     menuItem("Dashboard", tabName = "dashboard", icon = NULL),
+                     menuItem("Map Visualization", tabName = "maps", icon = NULL),
+                     menuItem("Bar Chart Visualization", tabName = "bars", icon = NULL),
+                     menuItem("Compare Plots", tabName = "comparePlots", icon = NULL),
+                     menuItem("About", tabName = "about", icon = NULL)
+                   )
   ),
   
   dashboardBody(
@@ -273,7 +267,7 @@ ui <- dashboardPage(
         br(),
         br(),
         br(),
-        box(title = "All Entries on August 8th 2021", solidHeader = TRUE, status = "primary", width = 20,
+        box(title = "All Entries on August 23th 2021", solidHeader = TRUE, status = "primary", width = 20,
             plotOutput("dashboardTabTable", height = 300),
         ),
         leafletOutput("dashboardTabMap")
@@ -289,7 +283,7 @@ ui <- dashboardPage(
         br(),
         br(),
         br(),
-        box(title = "All Entries on August 8th 2021", solidHeader = TRUE, status = "primary", width = 20,
+        box(title = "All Entries on August 23rd 2021", solidHeader = TRUE, status = "primary", width = 20,
             plotOutput("dashboardTabTable2", height = 300),
         ),
         leafletOutput("dashboardTabMap2")
@@ -357,7 +351,7 @@ ui <- dashboardPage(
                    box(
                      selectInput("YearOne", "Select the year to visualize", years, selected = 2021), 
                      selectInput("StopOne", "Select the stop to visualize", unique(stops), selected = "Pulaski")
-                     ),
+                   ),
                    box(width = 5,
                        #The checkboxes allow the user to pick which visualizations they want to see
                        p("Choose what data"),
@@ -434,8 +428,8 @@ ui <- dashboardPage(
                #Spacer Column 
         ),
       )
-      )
     )
+  )
 )
 server <- function(input, output, session) {
   observeEvent(input$prev1,{
@@ -510,7 +504,6 @@ server <- function(input, output, session) {
     }
   })
   
-  
   stopReactiveOne <- reactive({
     do.call("rbind", list(subset(Data1Merged, Data1Merged$STATION_NAME == input$StopOne), subset(Data2Merged,Data2Merged$STATION_NAME == input$StopOne), subset(Data3Merged,Data3Merged$STATION_NAME == input$StopOne), subset(Data4Merged,Data4Merged$STATION_NAME == input$StopOne), subset(Data5Merged, Data5Merged$STATION_NAME == input$StopOne), subset(Data6Merged, Data6Merged$STATION_NAME == input$StopOne), subset(Data7Merged, Data7Merged$STATION_NAME == input$StopOne), subset(Data8Merged, Data8Merged$STATION_NAME == input$StopOne))) 
   })
@@ -554,11 +547,11 @@ server <- function(input, output, session) {
   dateReactive2 <- reactive({
     do.call("rbind", list(subset(Data1Merged, newDate == input$inputDate2), subset(Data2Merged, newDate == input$inputDate2), subset(Data3Merged, newDate == input$inputDate2), subset(Data4Merged, newDate == input$inputDate2), subset(Data5Merged, newDate == input$inputDate2), subset(Data6Merged, newDate == input$inputDate2), subset(Data7Merged, newDate == input$inputDate2), subset(Data8Merged, newDate == input$inputDate2)))
   })
-
+  
   dateReactiveTable <- reactive({
     do.call("rbind", list(subset(Data1Merged, newDate == input$inputDate2), subset(Data2Merged, newDate == input$inputDate2), subset(Data3Merged, newDate == input$inputDate2), subset(Data4Merged, newDate == input$inputDate2), subset(Data5Merged, newDate == input$inputDate2), subset(Data6Merged, newDate == input$inputDate2), subset(Data7Merged, newDate == input$inputDate2), subset(Data8Merged, newDate == input$inputDate2)))
   })
-
+  
   
   output$dashboardTabTable <- renderPlot({
     ggplot(DataFirstDay, aes(x = stationname, y = rides)) + geom_bar(stat="identity", fill="steelblue") + theme(axis.text.x = element_text(angle=90)) + labs(y= "Entries", x = "Stations")
@@ -582,33 +575,52 @@ server <- function(input, output, session) {
       {
         table <- dateReactiveTable()[c(9,5)]
       },
-      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Date", "Entries")
+      options = list(searching = FALSE, lengthChange = FALSE, pageLength = 5), rownames = FALSE, colnames = c("Station", "Entries")
     )
   )
   output$dashboardTabMap <- renderLeaflet({
     leaflet(DataFirstDay) %>%
       addProviderTiles(providers$Esri.NatGeoWorldMap) %>%
-      addCircleMarkers(lng=DataFirstDay$Lon, lat=DataFirstDay$Lat, popup=paste("Station: ", DataFirstDay$STATION_NAME, "\nEntries: ", DataFirstDay$rides)) %>%
+      addCircleMarkers(lng=DataFirstDay$Lon, lat=DataFirstDay$Lat, color = ~pal(test), popup=paste("Station: ", DataFirstDay$STATION_NAME, "\nEntries: ", DataFirstDay$rides)) %>%
       addResetMapButton() %>%
+      addLegend("bottomright", 
+                colors =c("red",  "blue", "brown", "green", "orange", "pink", "purple", "yellow"),
+                labels= c("Red Line", "Blue Line","Brown Line","Green Line", "Orange Line", "Pink Line", "Purple Line", "Yellow Line"),
+                title= "CTA Lines",
+                opacity = 1)%>%
       setView(-87.63245, 41.88425, zoom = 10)
   })
   output$dashboardTabMap2 <- renderLeaflet({
-    leaflet(DataFirstDay) %>%
+    leaflet(DataFirstDay2) %>%
       addProviderTiles(providers$Esri.NatGeoWorldMap) %>%
-      addCircleMarkers(lng=DataFirstDay$Lon, lat=DataFirstDay$Lat, popup=paste("Station: ", DataFirstDay$STATION_NAME, "\nEntries: ", DataFirstDay$rides)) %>%
+      addCircleMarkers(lng=DataFirstDay2$Lon, lat=DataFirstDay2$Lat, popup=paste("Station: ", DataFirstDay2$STATION_NAME, "\nEntries: ", DataFirstDay2$rides)) %>%
       addResetMapButton() %>%
+      addLegend("bottomright", 
+                colors =c("red",  "blue", "brown", "green", "orange", "pink", "purple", "yellow"),
+                labels= c("Red Line", "Blue Line","Brown Line","Green Line", "Orange Line", "Pink Line", "Purple Line", "Yellow Line"),
+                title= "CTA Lines",
+                opacity = 1)%>%
       setView(-87.63245, 41.88425, zoom = 10)
   })
   output$mapTabMap <- renderLeaflet({
     style <- styleReactive()
     date <- dateReactive()
+    date$test = cut(date$Code,
+                    breaks = c(1,2,3,4,5,6,7,8, 9), right = FALSE,
+                    labels = c("red", "blue", "brown","green","orange", "pink", "purple", "yellow"))
+    pal = colorFactor(palette = c("red", "blue", "brown", "green", "orange", "pink", "purple", "yellow"), domain = DataFirstDay$test)
     leaflet(date) %>%
       addProviderTiles(style) %>%
-      addCircleMarkers(lng=date$Lon, lat=date$Lat, popup=paste("Station: ", date$STATION_NAME, "\nEntries: ", date$rides)) %>%
+      addCircleMarkers(lng=date$Lon, lat=date$Lat, color = ~pal(test), popup=paste("Station: ", date$STATION_NAME, "\nEntries: ", date$rides)) %>%
       addResetMapButton() %>%
+      addLegend("bottomright", 
+                colors =c("red",  "blue", "brown", "green", "orange", "pink", "purple", "yellow"),
+                labels= c("Red Line", "Blue Line","Brown Line","Green Line", "Orange Line", "Pink Line", "Purple Line", "Yellow Line"),
+                title= "CTA Lines",
+                opacity = 1)%>%
       setView(-87.63245, 41.88425, zoom = 10)
   })
-
+  
   output$DayEntriesOne <- renderPlot({
     stop <- stopReactiveOne()
     year <- yearReactive()
